@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import CustomFormInput from '../../components/CustomFormInput/CustomFormInput.component';
 import './LoginPage.styles.scss';
 
@@ -52,7 +52,7 @@ const LoginPage = () => {
                         Sign In
                     </button>
                 </div>
-                {success ? <Redirect to='/https://www.google.com/' /> : null}
+                {success ? <Route exact path="/" render={() => (window.location = "https://www.google.com")} /> : null}
         </div>
     );
 }
