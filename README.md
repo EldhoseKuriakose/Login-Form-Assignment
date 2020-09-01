@@ -7,5 +7,5 @@ A login assignment for a doctor login
 3. `npm start` - To start the application
 
 #### Successful response for following details
-`Email` - admin@admin.com
+`Email` - admin@admin.com <br>
 `Password` - admin
